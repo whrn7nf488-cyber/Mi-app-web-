@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <!-- Menú hamburguesa -->
+    <div class="header">
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
+      <h1>Mi App</h1>
+    </div>
+
+    <!-- Menú lateral -->
+    <div id="sidebar" class="sidebar">
+      <a href="#home" onclick="closeMenu()">Inicio</a>
+      <a href="#sobre" onclick="closeMenu()">Sobre mí</a>
+      <a href="#proyectos" onclick="closeMenu()">Proyectos</a>
+      <a href="#contacto" onclick="closeMenu()">Contacto</a>
+    </div>
+
+    <!-- Contenido -->
+    <div class="content">
+      <section id="home">
+        <img src="https://via.placeholder.com/120" alt="Tu foto" class="profile-pic" />
+        <h2>¡Hola! Soy [TU NOMBRE]</h2>
+        <p>Aprendiendo a crear apps web 🚀</p>
+      </section>
+
+      <section id="sobre">
+        <h2>Sobre mí</h2>
+        <p>¡Me apasiona programar! Este es mi primer sitio web como app.</p>
+      </section>
+
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="card">
+          <h3>Calculadora</h3>
+          <p>App de consola en Python</p>
+          <a href="https://replit.com/@aderlinjareds/Calculadora" target="_blank">Ver</a>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: tuemail@ejemplo.com</p>
+        <p>GitHub: @whrn7nf488-cyber</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
